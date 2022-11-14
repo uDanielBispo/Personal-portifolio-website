@@ -43,6 +43,7 @@ skillsHeader.forEach(el =>{
   el.addEventListener('click', toggleSkills);
 })
 
+
 const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]');
 
@@ -62,5 +63,27 @@ tabs.forEach(tab =>{
   })
 })
 
+//ACTIVE MODAL
+const modalViews = document.querySelectorAll('.services__modal'),
+      modalBtns = document.querySelectorAll('.services__button'),
+      modalCloses = document.querySelectorAll('.services__modal-close');
+
+let modal = function(modalClick){
+  modalViews[modalClick].classList.add('active__modal')
+}
+
+modalBtns.forEach((modalBtn, i) =>{
+  modalBtn.addEventListener('click', () => {
+    modal(i)
+  })
+})
+
+modalCloses.forEach((modalClose => {
+  modalClose.addEventListener('click', () => {
+    modalViews.forEach((modalView)=>{
+      modalView.classList.remove('active__modal')
+    })
+  })
+}))
 
 
