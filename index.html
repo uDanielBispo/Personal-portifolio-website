@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="../Personal-portifolio-website/CSS/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="CSS/style.css">
   <title>Daniel Bispo</title>
 </head>
 <body>
@@ -434,25 +435,64 @@
       </div>
     </section>
     <!--==================================PORTIFOLIO================================-->
-    <section class="portifolio section" id="portifolio">
+    <section class="portifolio section container" id="portifolio">
       <h2 class="section__title">Portifolio</h2>
       <span class="section__subtitle">Most recent work</span>
 
-      <div class="portifolio__container">
-        <div>
-          <!--portifolio 1-->
-          <div class="portifolio__conten grid">
-            <img src="img/portifolio_img.png" alt="" class="portifolio__img">
-            <div class="portifolio__data">
-              <h3 class="portifolio__title">My portifolio site</h3>
-              <p class="portifolio__description">This website</p>
+        <div class="portifolio__container swiper mySwiper">
+          <div class="swiper-wrapper">
+          
+            <!--portifolio 1-->
+            <div class="portifolio__content grid swiper-slide">
+              <img src="img/portifolio_img.png" alt="" class="portifolio__img">
+              <div class="portifolio__data">
+                <h3 class="portifolio__title">My portifolio site</h3>
+                <p class="portifolio__description">This website</p>
+                <a href="#" class="button button__flex button--small portifolio--button">
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>              
+              </div>
             </div>
+            <!--portifolio 2-->
+            <div class="portifolio__content grid swiper-slide">
+              <img src="img/portifolio_img.png" alt="" class="portifolio__img">
+              <div class="portifolio__data">
+                <h3 class="portifolio__title">My portifolio site</h3>
+                <p class="portifolio__description">This website</p>
+                <a href="#" class="button button__flex button--small portifolio--button">
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--portifolio 3-->
+            <div class="portifolio__content grid swiper-slide">
+              <img src="img/portifolio_img.png" alt="" class="portifolio__img">
+              <div class="portifolio__data">
+                <h3 class="portifolio__title">My portifolio site</h3>
+                <p class="portifolio__description">This website</p>
+                <a href="#" class="button button__flex button--small portifolio--button">
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          
           </div>
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portifolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portifolio-icon"></i>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
+
       </div>
     </section>
   </main>
-
+  <script src="../Personal-portifolio-website/JS/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -257,7 +257,7 @@ img{
 }
 .button:hover{
 	background-color: var(--first-color-alt);
-	color: var(--first-color);
+	
 }
 .button__icon{
 	font-size: 1.25rem;
@@ -536,9 +536,60 @@ img{
 	color: var(--first-color);
 	margin-right: var(--mb-25);
 }
-
 /*Active MODAL*/
 .active__modal{
 	opacity: 1;
 	visibility: visible;
+}
+/*PORTIFOLIO*/
+.portifolio__container{
+	overflow: initial;
+}
+.portifolio__content{
+	padding: 0 1.5rem;
+	
+}
+.portifolio__img{
+	width: 265px;
+	border-radius: .5rem;
+	
+	margin: auto;
+}
+.portifolio__title{
+	font-size: var(--h3-font-size);
+	margin-bottom: var(--mb-0-5);
+}
+.portifolio__description{
+	margin-bottom: var(--mb-0-75);
+}
+.portifolio--button:hover .button__icon{
+	transform: translateX(.25rem);
+}
+
+/*SWIPER*/
+.swiper-button-prev::after,
+.swiper-button-next::after{
+	content: '';
+}
+.swiper-portifolio-icon{
+	font-size: 2rem;
+	color: var(--first-color);
+}
+.swiper-button-prev{
+	left: -.5rem;
+}
+.swiper-button-next{
+	right: -.5rem;
+}
+.swiper-pagination > span {
+	position:relative;
+	bottom: -2.5rem;
+}
+.swiper-pagination-bullet-active{
+	background-color: var(--first-color);
+}
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+	outline: none;
 }
